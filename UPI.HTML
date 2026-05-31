@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analisis Jurusan UPI Bandung 2026 | Prospek Kerja & Tingkat Kesulitan</title>
+<style>
+  :root {
+    --bg: #f8f7f4;
+    --bg-card: #ffffff;
+    --bg-secondary: #f1efe8;
+    --text-primary: #1a1a18;
+    --text-secondary: #5f5e5a;
+    --text-tertiary: #888780;
+    --border: rgba(0,0,0,0.1);
+    --border-md: rgba(0,0,0,0.18);
+    --blue: #185FA5;
+    --blue-light: #e6f1fb;
+    --blue-dark: #0c447c;
+    --green: #3B6D11;
+    --green-light: #eaf3de;
+    --red: #A32D2D;
+    --red-light: #fcebeb;
+    --amber: #BA7517;
+    --amber-light: #faeeda;
+    --radius: 8px;
+    --radius-lg: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a18;
+      --bg-card: #242422;
+      --bg-secondary: #2c2c2a;
+      --text-primary: #f1efe8;
+      --text-secondary: #b4b2a9;
+      --text-tertiary: #888780;
+      --border: rgba(255,255,255,0.1);
+      --border-md: rgba(255,255,255,0.18);
+      --blue-light: #042c53;
+      --blue-dark: #b5d4f4;
+      --green-light: #173404;
+      --red-light: #501313;
+      --amber-light: #412402;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text-primary); font-size: 16px; line-height: 1.6; }
+
+  /* HEADER */
+  .site-header { background: var(--bg-card); border-bottom: 0.5px solid var(--border); padding: 1.25rem 2rem; position: sticky; top: 0; z-index: 100; }
+  .site-header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  .site-logo { display: flex; align-items: center; gap: 10px; }
+  .logo-badge { background: var(--blue); color: #fff; font-size: 13px; font-weight: 600; padding: 4px 10px; border-radius: var(--radius); letter-spacing: 0.03em; }
+  .site-title { font-size: 15px; font-weight: 500; color: var(--text-primary); }
+  .site-subtitle { font-size: 12px; color: var(--text-secondary); }
+  .search-wrap { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .search-wrap input, .search-wrap select { font-size: 13px; padding: 7px 12px; border-radius: var(--radius); border: 0.5px solid var(--border-md); background: var(--bg-secondary); color: var(--text-primary); outline: none; }
+  .search-wrap input { width: 220px; }
+  .search-wrap input:focus, .search-wrap select:focus { border-color: var(--blue); }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, #0c447c 0%, #185FA5 50%, #378ADD 100%); color: #fff; padding: 3rem 2rem; text-align: center; }
+  .hero h1 { font-size: clamp(22px, 4vw, 36px); font-weight: 600; margin-bottom: 8px; }
+  .hero p { font-size: 15px; opacity: 0.85; max-width: 620px; margin: 0 auto 1.5rem; }
+  .hero-stats { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+  .hero-stat { text-align: center; }
+  .hero-stat .num { font-size: 28px; font-weight: 700; }
+  .hero-stat .lbl { font-size: 12px; opacity: 0.75; }
+
+  /* MAIN LAYOUT */
+  .main { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+
+  /* TABS */
+  .tabs { display: flex; border-bottom: 1px solid var(--border); margin-bottom: 1.5rem; gap: 0; }
+  .tab { font-size: 14px; padding: 10px 18px; cursor: pointer; color: var(--text-secondary); border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color 0.15s; }
+  .tab.active { color: var(--blue); border-bottom-color: var(--blue); font-weight: 500; }
+  .tab:hover:not(.active) { color: var(--text-primary); }
+  .view { display: none; }
+  .view.active { display: block; }
+
+  /* FACULTY BAR */
+  .fac-bar { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.25rem; }
+  .fac-btn { font-size: 12px; padding: 5px 12px; border-radius: 20px; border: 0.5px solid var(--border-md); background: var(--bg-secondary); color: var(--text-secondary); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+  .fac-btn.active { background: var(--blue); border-color: var(--blue); color: #fff; }
+  .fac-btn:hover:not(.active) { background: var(--bg-card); color: var(--text-primary); }
+
+  /* STATS ROW */
+  .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 1.5rem; }
+  .stat-box { background: var(--bg-card); border: 0.5px solid var(--border); border-radius: var(--radius); padding: 12px 14px; }
+  .stat-box .lbl { font-size: 11px; color: var(--text-secondary); margin-bottom: 2px; }
+  .stat-box .val { font-size: 24px; font-weight: 600; color: var(--text-primary); }
+
+  /* LEGEND */
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 1rem; }
+  .leg { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-secondary); }
+  .leg-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+  /* CONTROLS ROW */
+  .controls { display: flex; gap: 8px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .controls input { flex: 1; min-width: 180px; font-size: 14px; padding: 8px 12px; border-radius: var(--radius); border: 0.5px solid var(--border-md); background: var(--bg-card); color: var(--text-primary); outline: none; }
+  .controls input:focus { border-color: var(--blue); }
+  .controls select { font-size: 13px; padding: 8px 12px; border-radius: var(--radius); border: 0.5px solid var(--border-md); background: var(--bg-card); color: var(--text-primary); outline: none; }
+
+  /* CARDS GRID */
+  .cards { display: grid; gap: 10px; }
+  .card { background: var(--bg-card); border: 0.5px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+  .card-head { padding: 14px 16px; cursor: pointer; display: flex; align-items: flex-start; gap: 12px; transition: background 0.12s; }
+  .card-head:hover { background: var(--bg-secondary); }
+  .fac-badge { font-size: 10px; font-weight: 600; padding: 3px 9px; border-radius: 12px; white-space: nowrap; }
+  .jenjang-tag { font-size: 10px; color: var(--text-tertiary); margin-top: 4px; text-align: center; }
+  .card-info { flex: 1; }
+  .card-name { font-size: 15px; font-weight: 500; color: var(--text-primary); margin-bottom: 6px; }
+  .metrics { display: flex; gap: 14px; flex-wrap: wrap; }
+  .metric { display: flex; align-items: center; gap: 5px; }
+  .metric-label { font-size: 11px; color: var(--text-tertiary); }
+  .dots { display: flex; gap: 3px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--border-md); }
+  .dot.on-diff { background: #5f5e5a; }
+  .dot.on-demand { background: #A32D2D; }
+  .dot.on-flex { background: #3B6D11; }
+  .chevron { font-size: 18px; color: var(--text-tertiary); transition: transform 0.2s; user-select: none; margin-top: 2px; }
+  .chevron.open { transform: rotate(180deg); }
+
+  /* CARD BODY */
+  .card-body { display: none; border-top: 0.5px solid var(--border); padding: 16px; }
+  .card-body.open { display: block; }
+  .section-label { font-size: 11px; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; margin-top: 14px; }
+  .section-label:first-child { margin-top: 0; }
+  .body-text { font-size: 13px; color: var(--text-primary); line-height: 1.65; }
+  .tag-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px; }
+  .tag { font-size: 12px; padding: 3px 10px; border-radius: 10px; }
+  .tag-job { background: var(--amber-light); color: var(--amber); border: 0.5px solid rgba(186,117,23,0.3); }
+  .tag-geo { background: var(--green-light); color: var(--green); border: 0.5px solid rgba(59,109,17,0.3); }
+  .tag-note { margin-top: 8px; font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.6; padding: 8px 12px; background: var(--bg-secondary); border-radius: var(--radius); border-left: 3px solid var(--blue); }
+  .no-result { text-align: center; padding: 3rem; color: var(--text-secondary); }
+
+  /* COMPARE TABLE */
+  .table-wrap { overflow-x: auto; }
+  table.compare { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table.compare th { font-size: 11px; font-weight: 600; color: var(--text-secondary); text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border-md); white-space: nowrap; }
+  table.compare td { padding: 8px 10px; border-bottom: 0.5px solid var(--border); color: var(--text-primary); vertical-align: middle; }
+  table.compare tr:last-child td { border-bottom: none; }
+  table.compare tbody tr:hover td { background: var(--bg-secondary); }
+  .demand-5 { color: #A32D2D; font-weight: 500; }
+  .demand-4 { color: #BA7517; font-weight: 500; }
+  .demand-3 { color: var(--text-secondary); }
+  .demand-2, .demand-1 { color: var(--text-tertiary); }
+
+  /* ABOUT */
+  .about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 1.5rem; }
+  .about-card { background: var(--bg-card); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
+  .about-card h3 { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+  .about-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+
+  /* FOOTER */
+  footer { text-align: center; padding: 2rem; font-size: 12px; color: var(--text-tertiary); border-top: 0.5px solid var(--border); margin-top: 3rem; }
+
+  @media (max-width: 640px) {
+    .main { padding: 1rem; }
+    .hero { padding: 2rem 1rem; }
+    .site-header { padding: 1rem; }
+    .search-wrap input { width: 100%; }
+    .hero-stats { gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-logo">
+      <span class="logo-badge">UPI</span>
+      <div>
+        <div class="site-title">Analisis Jurusan UPI Bandung 2026</div>
+        <div class="site-subtitle">Prospek Kerja Global · Tingkat Kesulitan · Pasar Geografis</div>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <input type="text" id="search" placeholder="🔍 Cari program studi..." oninput="filterCards()">
+      <select id="sortBy" onchange="filterCards()">
+        <option value="name">Urut: Nama</option>
+        <option value="demand">Urut: Permintaan Global ↓</option>
+        <option value="difficulty">Urut: Kesulitan ↓</option>
+        <option value="flex">Urut: Fleksibilitas ↓</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Panduan Memilih Jurusan UPI Bandung</h1>
+  <p>Riset komprehensif berbasis tren industri 2025–2026. Analisis tingkat kesulitan akademis, prospek karier global, dan pasar kerja internasional untuk setiap program studi.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num">82</div><div class="lbl">Program Studi</div></div>
+    <div class="hero-stat"><div class="num">9</div><div class="lbl">Fakultas</div></div>
+    <div class="hero-stat"><div class="num">30+</div><div class="lbl">Negara Tujuan Kerja</div></div>
+    <div class="hero-stat"><div class="num">2026</div><div class="lbl">Data Terkini</div></div>
+  </div>
+</section>
+
+<main class="main">
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('catalog', this)">📚 Katalog Jurusan</div>
+    <div class="tab" onclick="switchTab('compare', this)">📊 Tabel Perbandingan</div>
+    <div class="tab" onclick="switchTab('about', this)">ℹ️ Panduan Membaca</div>
+  </div>
+
+  <!-- CATALOG VIEW -->
+  <div id="catalog" class="view active">
+    <div class="fac-bar" id="facBar"></div>
+    <div class="legend">
+      <div class="leg"><div class="leg-dot" style="background:#5f5e5a"></div>Tingkat kesulitan</div>
+      <div class="leg"><div class="leg-dot" style="background:#A32D2D"></div>Permintaan global</div>
+      <div class="leg"><div class="leg-dot" style="background:#3B6D11"></div>Fleksibilitas industri</div>
+      <span style="font-size:12px;color:var(--text-tertiary)">Skala 1–5 titik</span>
+    </div>
+    <div class="stats-row" id="statsRow"></div>
+    <div class="cards" id="cardsContainer"></div>
+  </div>
+
+  <!-- COMPARE VIEW -->
+  <div id="compare" class="view">
+    <p style="font-size:13px;color:var(--text-secondary);margin-bottom:1rem;">Perbandingan seluruh 82 program studi berdasarkan tiga dimensi utama. Skala 1–5. Klik header kolom untuk mengurutkan.</p>
+    <div class="controls">
+      <select id="cmpFac" onchange="renderCompare()">
+        <option value="all">Semua Fakultas</option>
+      </select>
+      <select id="cmpSort" onchange="renderCompare()">
+        <option value="demand">Urut: Permintaan Global ↓</option>
+        <option value="flex">Urut: Fleksibilitas ↓</option>
+        <option value="difficulty">Urut: Kesulitan ↓</option>
+        <option value="name">Urut: Nama A–Z</option>
+      </select>
+    </div>
+    <div class="table-wrap">
+      <table class="compare">
+        <thead><tr>
+          <th>#</th>
+          <th>Program Studi</th>
+          <th>Fak.</th>
+          <th>Kesulitan</th>
+          <th>Permintaan Global</th>
+          <th>Fleksibilitas</th>
+          <th>Pasar Utama</th>
+        </tr></thead>
+        <tbody id="compareTbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ABOUT VIEW -->
+  <div id="about" class="view">
+    <h2 style="font-size:20px;font-weight:500;margin-bottom:0.5rem">Panduan Membaca Analisis Ini</h2>
+    <p style="font-size:14px;color:var(--text-secondary);margin-bottom:1.5rem">Berikut penjelasan metodologi dan cara menginterpretasikan skor dalam katalog ini.</p>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>⚙️ Tingkat Kesulitan (1–5)</h3>
+        <p>Mengukur beban akademis rata-rata: kompleksitas mata kuliah inti, intensitas praktikum, tuntutan kompetensi teknis, dan standar kelulusan. <br><br>1 = Sangat Ringan &nbsp;|&nbsp; 5 = Sangat Berat</p>
+      </div>
+      <div class="about-card">
+        <h3>🌍 Permintaan Global (1–5)</h3>
+        <p>Mengukur seberapa besar permintaan tenaga kerja di pasar internasional saat ini (2025–2026) berdasarkan laporan BLS, LinkedIn, IEA, WHO, WEF, dan lembaga riset ketenagakerjaan global.<br><br>1 = Sangat Rendah &nbsp;|&nbsp; 5 = Sangat Tinggi</p>
+      </div>
+      <div class="about-card">
+        <h3>🔄 Fleksibilitas Industri (1–5)</h3>
+        <p>Mengukur seberapa luas sebuah lulusan dapat berpindah lintas industri dan jenis pekerjaan. Skor tinggi berarti keahliannya applicable di banyak sektor (teknologi, keuangan, pemerintah, NGO, dll).<br><br>1 = Sangat Sempit &nbsp;|&nbsp; 5 = Sangat Luas</p>
+      </div>
+      <div class="about-card">
+        <h3>📍 Pasar Geografis</h3>
+        <p>Negara-negara yang saat ini mengalami kekurangan tenaga ahli di bidang tersebut dan menawarkan jalur visa kerja atau rekrutmen aktif bagi tenaga asing. Diperbarui berdasarkan data shortage occupation list 2025–2026.</p>
+      </div>
+      <div class="about-card">
+        <h3>💼 Profesi High-Demand</h3>
+        <p>Jabatan yang saat ini paling dicari dan diproyeksikan terus berkembang dalam 5–10 tahun ke depan berdasarkan proyeksi WEF Future of Jobs 2025 dan laporan LinkedIn Global Talent Trends.</p>
+      </div>
+      <div class="about-card">
+        <h3>📌 Sumber Data</h3>
+        <p>BLS (US Bureau of Labor Statistics), LinkedIn Jobs Report 2025, WHO Healthcare Workforce Report, IEA World Energy Employment 2025, WEF Future of Jobs 2025, Manpower Talent Shortage Survey, IRENA Jobs Review 2025, IDC IT Skills Survey.</p>
+      </div>
+    </div>
+    <div style="background:var(--bg-card);border:0.5px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;margin-top:1.5rem;">
+      <h3 style="font-size:15px;font-weight:500;margin-bottom:8px">⚠️ Catatan Penting</h3>
+      <p style="font-size:13px;color:var(--text-secondary);line-height:1.7">Analisis ini bersifat panduan umum berbasis tren makro. Prospek karier individual sangat dipengaruhi oleh prestasi akademis, portofolio, sertifikasi tambahan, kemampuan bahasa asing (terutama Inggris), dan jaringan profesional. Skor "Permintaan Global" tidak berarti pekerjaan di luar negeri otomatis mudah didapat — proses lisensi, visa, dan adaptasi budaya tetap menjadi faktor kritis.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Data berbasis tren industri 2025–2026 · Diperbarui Mei 2026</p>
+  <p style="margin-top:4px">Sumber: WHO, BLS, WEF, LinkedIn, IEA, IRENA, IDC, Manpower Group</p>
+</footer>
+
+<script>
+const DATA = [
+  {fac:"FIP",name:"Administrasi Pendidikan",jenjang:"S1",diff:2,demand:2,flex:3,
+   difficulty_text:"Manajemen organisasi pendidikan, kebijakan publik, hukum pendidikan. Banyak tugas analisis kebijakan dan studi kasus administrasi sekolah.",
+   jobs:["Kepala Sekolah / Pengawas","Perencana Pendidikan Kemendikbud","Konsultan Pendidikan NGO","Education Policy Analyst","Programme Officer UNESCO/UNICEF"],
+   geo:["Indonesia","Malaysia","Afrika Timur (NGO)","Timor Leste"],
+   geo_note:"Peluang internasional terbatas pada posisi NGO/multilateral (UNESCO, UNICEF, Save the Children). Bahasa Inggris aktif membuka akses ke posisi program officer di lembaga internasional."
+  },
+  {fac:"FIP",name:"Bimbingan dan Konseling",jenjang:"S1",diff:3,demand:3,flex:4,
+   difficulty_text:"Teori psikologi konseling, teknik intervensi, diagnosis psikologis ringan, praktik konseling kelompok dan individual wajib ditempuh dengan jam klinis signifikan.",
+   jobs:["School Counselor","Konselor Karir (Career Coach)","Corporate Wellness Counselor","Mental Health Support Worker","HRD Specialist"],
+   geo:["Singapura","Australia","Inggris","Kanada","Malaysia"],
+   geo_note:"Krisis kesehatan mental global mendorong permintaan counselor di sekolah internasional. Singapura dan Australia membutuhkan school counselor terdaftar secara aktif dengan gaji kompetitif."
+  },
+  {fac:"FIP",name:"Pendidikan Masyarakat",jenjang:"S1",diff:2,demand:2,flex:3,
+   difficulty_text:"Pengembangan komunitas, andragogi, perencanaan program pelatihan. Relatif tidak terlalu teknis namun banyak kerja lapangan dan penyusunan proposal program.",
+   jobs:["Community Development Officer","Fasilitator Pelatihan NGO","Program Manager USAID/UNDP","Adult Literacy Trainer","CSR Officer"],
+   geo:["Indonesia","Afrika (NGO)","Asia Tenggara (ASEAN NGO)"],
+   geo_note:"Mayoritas berkarir di Indonesia dan lembaga NGO internasional. Sertifikasi PMP membuka peluang lebih luas sebagai project manager di lembaga pembangunan internasional."
+  },
+  {fac:"FIP",name:"Pendidikan Khusus",jenjang:"S1",diff:3,demand:4,flex:3,
+   difficulty_text:"Diagnosis kebutuhan khusus, terapi bahasa, psikologi anak berkebutuhan khusus, praktik langsung dengan anak ABK. Membutuhkan kesabaran tinggi dan resiliensi emosional.",
+   jobs:["Special Education Teacher","Autism Specialist / ABA Therapist","Learning Support Teacher","Resource Room Teacher","Inclusion Coordinator"],
+   geo:["Australia","Inggris","Kanada","Uni Emirat Arab","Singapura"],
+   geo_note:"Australia, UK, dan Kanada mengalami kekurangan spesialis pendidikan inklusi secara akut. Sekolah internasional di ASEAN aktif merekrut shadow teacher dan learning support specialist."
+  },
+  {fac:"FIP",name:"Teknologi Pendidikan",jenjang:"S1",diff:3,demand:4,flex:5,
+   difficulty_text:"Desain instruksional, e-learning authoring tools (Articulate 360, Adobe Captivate), multimedia pendidikan, analisis kebutuhan pelatihan, evaluasi program berbasis data.",
+   jobs:["Instructional Designer","Learning Experience Designer (LXD)","E-learning Developer","Corporate Trainer","EdTech Product Manager","LMS Administrator"],
+   geo:["Amerika Serikat","Inggris","Australia","Singapura","Uni Emirat Arab"],
+   geo_note:"Pasar EdTech global bernilai $400+ miliar. Instructional Designer adalah salah satu profesi remote-work paling tumbuh. Platform seperti Coursera, LinkedIn Learning, dan Udemy terus ekspansi tim konten."
+  },
+  {fac:"FIP",name:"Perpustakaan dan Sains Informasi",jenjang:"S1",diff:3,demand:3,flex:4,
+   difficulty_text:"Katalogisasi, metadata, arsitektur informasi, manajemen basis data pengetahuan, literasi informasi digital, dan r
