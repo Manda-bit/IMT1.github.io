@@ -323,4 +323,600 @@ const DATA = [
    geo_note:"Pasar EdTech global bernilai $400+ miliar. Instructional Designer adalah salah satu profesi remote-work paling tumbuh. Platform seperti Coursera, LinkedIn Learning, dan Udemy terus ekspansi tim konten."
   },
   {fac:"FIP",name:"Perpustakaan dan Sains Informasi",jenjang:"S1",diff:3,demand:3,flex:4,
-   difficulty_text:"Katalogisasi, metadata, arsitektur informasi, manajemen basis data pengetahuan, literasi informasi digital, dan r
+   difficulty_text:"Katalogisasi, metadata, arsitektur informasi, manajemen basis data pengetahuan, literasi informasi digital, dan retrieval system.",
+   jobs:["Librarian / Information Specialist","Knowledge Manager","Data Curator","Digital Archivist","UX Researcher (Information Architecture)"],
+   geo:["Australia","Inggris","Kanada","Singapura"],
+   geo_note:"Profesi modern berkembang ke knowledge management dan UX information architecture. Australia dan UK memiliki program rekrutmen perpustakaan publik dan universitas untuk tenaga asing bersertifikasi."
+  },
+  {fac:"FIP",name:"Pendidikan Guru Sekolah Dasar",jenjang:"S1",diff:2,demand:3,flex:2,
+   difficulty_text:"Didaktika multi-mata pelajaran, pedagogik dasar, micro-teaching intensif. Beban studi relatif merata tanpa satu mata kuliah yang sangat dominan sulit.",
+   jobs:["Guru SD Negeri / Swasta","Guru Sekolah Internasional","Curriculum Developer","Education Consultant"],
+   geo:["Indonesia","Malaysia","Timor Leste","Brunei","Sekolah Internasional ASEAN"],
+   geo_note:"Sekolah internasional berbasis IB/Cambridge di ASEAN aktif merekrut guru SD. Sertifikasi Cambridge Teaching (CELTA) sangat meningkatkan daya saing di pasar internasional."
+  },
+  {fac:"FIP",name:"Pendidikan Guru PAUD",jenjang:"S1",diff:2,demand:3,flex:2,
+   difficulty_text:"Perkembangan anak, psikologi anak usia dini, seni dan permainan edukatif. Beban praktikum cukup tinggi di TK dan PAUD dengan jam observasi langsung.",
+   jobs:["Guru PAUD / TK","Early Childhood Educator","Child Development Specialist","Parenting Consultant"],
+   geo:["Indonesia","Singapura","Malaysia","Uni Emirat Arab"],
+   geo_note:"Singapura sangat kekurangan early childhood educator terdaftar (MOE-SG). Gaji early childhood educator di Singapura kompetitif dibanding rata-rata ASEAN dengan tunjangan housing."
+  },
+  {fac:"FIP",name:"Psikologi",jenjang:"S1",diff:4,demand:4,flex:5,
+   difficulty_text:"Statistik psikologi, psikodiagnostik, neuropsikologi, psikometri, dan praktik asesmen klinis. Ujian lisensi psikolog (M.Psi.) diperlukan untuk praktik klinis penuh.",
+   jobs:["Psikolog Klinis","HRD / Organizational Psychologist","User Research Psychologist","Mental Health Counselor","Neuropsychologist","UX Researcher"],
+   geo:["Australia","Inggris","Kanada","Belanda","Amerika Serikat","Singapura"],
+   geo_note:"WHO memperkirakan krisis kesehatan mental global membutuhkan jutaan psikolog tambahan. Australia, UK, dan Kanada aktif merekrut dengan skema visa health worker. Pasar UX Research juga sangat besar untuk psikolog."
+  },
+  {fac:"FPIPS",name:"Pend. Pancasila & Kewarganegaraan",jenjang:"S1",diff:2,demand:1,flex:2,
+   difficulty_text:"Ilmu hukum dasar, filsafat Pancasila, sejarah konstitusi. Relatif ringan secara teknis namun padat analisis narasi dan hafalan regulasi.",
+   jobs:["Guru PKn","Pegawai Kementerian / Lembaga","Staf Bawaslu / KPU","Paralegal","Peneliti Kebijakan"],
+   geo:["Indonesia"],
+   geo_note:"Sangat terbatas untuk karir internasional. Nilai jual utama ada di sektor pemerintahan dan lembaga negara Indonesia. Gelar hukum tambahan membuka akses lebih luas."
+  },
+  {fac:"FPIPS",name:"Pendidikan Sejarah",jenjang:"S1",diff:2,demand:2,flex:2,
+   difficulty_text:"Historiografi, heuristik, dan penulisan ilmiah sejarah. Banyak membaca sumber primer dan analisis kritis dokumen historis dalam bahasa lama.",
+   jobs:["Guru Sejarah","Sejarawan / Peneliti","Kurator Museum","Content Creator Sejarah","Jurnalis Kebudayaan"],
+   geo:["Indonesia","Malaysia","Belanda (arsip kolonial)"],
+   geo_note:"Peluang internasional terbatas. Museum dan lembaga riset di Belanda memiliki permintaan spesifik terkait arsip dan sejarah kolonial Indonesia. Content creator sejarah digital tumbuh pesat."
+  },
+  {fac:"FPIPS",name:"Pendidikan Geografi",jenjang:"S1",diff:3,demand:3,flex:4,
+   difficulty_text:"Kartografi, penginderaan jauh, sistem informasi geografi, klimatologi, geomorfologi. Praktikum lapangan intensif dan analisis data spasial.",
+   jobs:["Guru Geografi","GIS Analyst","Urban Planner","Environmental Consultant","Climate Analyst"],
+   geo:["Amerika Serikat","Australia","Belanda","Inggris","Singapura"],
+   geo_note:"Komponen GIS dan remote sensing membuka peluang global. BLS AS memproyeksikan pertumbuhan 10% untuk posisi GIS analis. Spesialisasi geospasial sangat dicari lintas industri."
+  },
+  {fac:"FPIPS",name:"Ilmu Pendidikan Agama Islam",jenjang:"S1",diff:3,demand:2,flex:2,
+   difficulty_text:"Fiqh, ushul fiqh, tafsir Al-Quran, bahasa Arab, hadis, dan metodologi pengajaran agama. Beban hafalan dan kajian teks Arab tinggi.",
+   jobs:["Guru PAI","Penyuluh Agama","Dosen","Konsultan Keuangan Syariah","Da'i / Pembimbing Haji"],
+   geo:["Indonesia","Malaysia","Arab Saudi","Mesir","Brunei"],
+   geo_note:"Arab Saudi, Mesir, dan Malaysia membuka peluang bagi pengajar agama Islam bersertifikat. Sektor keuangan syariah global juga membutuhkan lulusan dengan background Islam yang paham keuangan modern."
+  },
+  {fac:"FPIPS",name:"Manajemen Resort dan Leisure",jenjang:"S1",diff:3,demand:4,flex:4,
+   difficulty_text:"Revenue management, hospitality operations, event planning, F&B management, praktik magang industri intensif di resort dan hotel bintang.",
+   jobs:["Resort Manager","Leisure & Recreation Manager","Hotel Operations Manager","Event Director","Tourism Consultant"],
+   geo:["Uni Emirat Arab","Swiss","Singapura","Amerika Serikat","Australia","Maladewa"],
+   geo_note:"Industri hospitality global mencapai $11.7 triliun kontribusi GDP (2025). UAE, Swiss, dan Singapura adalah pusat luxury hospitality yang sangat membutuhkan manajer berpengalaman."
+  },
+  {fac:"FPIPS",name:"Manajemen Pemasaran Pariwisata",jenjang:"S1",diff:3,demand:4,flex:4,
+   difficulty_text:"Digital marketing pariwisata, branding destinasi, analitik pemasaran, CRM, revenue management. Harus mahir tools digital marketing terkini.",
+   jobs:["Tourism Marketing Manager","Digital Marketing Specialist","Brand Manager (Travel)","Destination Management Officer","OTA Account Manager"],
+   geo:["Uni Emirat Arab","Singapura","Thailand","Amerika Serikat","Australia"],
+   geo_note:"Travel tech dan OTA (Booking.com, Agoda, Airbnb) terus ekspansi. Singapura adalah hub Asia Tenggara untuk posisi marketing pariwisata level regional."
+  },
+  {fac:"FPIPS",name:"Manajemen Industri Katering",jenjang:"S1",diff:3,demand:3,flex:3,
+   difficulty_text:"Manajemen dapur industri, food safety & HACCP, cost control F&B, culinary arts dasar, manajemen event catering skala besar.",
+   jobs:["Catering Manager","F&B Manager","Executive Chef (Manajemen)","Food Safety Inspector","Culinary Entrepreneur"],
+   geo:["Singapura","Malaysia","Australia","Uni Emirat Arab"],
+   geo_note:"Singapura dan Australia memiliki standar food safety ketat dan membuka rekrutmen untuk food service manager. Industri catering korporat dan event internasional terus tumbuh."
+  },
+  {fac:"FPIPS",name:"Survei Pemetaan & Info Geografis",jenjang:"D4",diff:4,demand:5,flex:5,
+   difficulty_text:"Survei geodetik, fotogrametri, LiDAR, drone mapping, pemrograman GIS (Python/QGIS/ArcGIS), analisis spasial lanjutan. Salah satu program paling teknis di FPIPS.",
+   jobs:["Surveyor Geodetik","GIS Developer","Remote Sensing Analyst","Urban Planner (Geospatial)","Geospatial Data Scientist","Disaster Risk Analyst"],
+   geo:["Amerika Serikat","Australia","Belanda","Inggris","Kanada","Jerman","Singapura"],
+   geo_note:"BLS memproyeksikan 10% pertumbuhan posisi GIS. Pasar geospatial global tumbuh ke $14.5B. Lightcast mencatat 21.5% pertumbuhan permintaan skill geospatial secara lintas industri global."
+  },
+  {fac:"FPIPS",name:"Pendidikan IPS",jenjang:"S1",diff:2,demand:2,flex:2,
+   difficulty_text:"Integrasi ilmu sosial (sejarah, geografi, ekonomi, sosiologi). Cakupan luas tapi kedalaman per bidang terbatas untuk keperluan pengajaran.",
+   jobs:["Guru IPS","Analis Sosial","Staf Pemerintahan","Program Evaluator NGO"],
+   geo:["Indonesia","Malaysia","Timor Leste"],
+   geo_note:"Terutama berorientasi pada karir mengajar domestik. Bekal multidisiplin bisa dimanfaatkan di lembaga internasional dengan pendidikan lanjut S2."
+  },
+  {fac:"FPIPS",name:"Pendidikan Sosiologi",jenjang:"S1",diff:2,demand:2,flex:3,
+   difficulty_text:"Teori sosiologi klasik dan kontemporer, riset sosial kualitatif/kuantitatif, analisis data sosial dan penyusunan laporan penelitian.",
+   jobs:["Guru Sosiologi","Peneliti Sosial","Analis Kebijakan","Community Organizer","CSR Specialist"],
+   geo:["Indonesia","Lembaga Riset Internasional"],
+   geo_note:"Terbatas untuk karir internasional tanpa jenjang S2. Gelar S2 Sosiologi membuka akses ke lembaga riset dan NGO global seperti UNDP dan World Bank."
+  },
+  {fac:"FPIPS",name:"Ilmu Komunikasi",jenjang:"S1",diff:3,demand:4,flex:5,
+   difficulty_text:"Teori komunikasi, produksi media, public relations, komunikasi digital, riset media. Proyek kreatif dan presentasi intensif sepanjang studi.",
+   jobs:["Content Strategist","Public Relations Manager","Social Media Manager","Jurnalis / Reporter","Brand Communications Manager","Digital Marketing Specialist"],
+   geo:["Singapura","Amerika Serikat","Australia","Uni Emirat Arab","Inggris"],
+   geo_note:"Industri media digital dan PR global terus tumbuh. Singapura adalah pusat media Asia. Demand untuk content strategist digital naik signifikan untuk brand global yang ekspansi ke Asia Tenggara."
+  },
+  {fac:"FPIPS",name:"Sains Informasi Geografi",jenjang:"S1",diff:4,demand:5,flex:5,
+   difficulty_text:"Python/R untuk analisis spasial, machine learning geospatial, database PostGIS, cloud GIS (Google Earth Engine), remote sensing advanced dan pemodelan geospasial.",
+   jobs:["Geospatial Data Scientist","GIS Developer","Remote Sensing Specialist","Location Intelligence Analyst","Urban AI Analyst"],
+   geo:["Amerika Serikat","Belanda","Inggris","Australia","Kanada","Jerman","Singapura"],
+   geo_note:"Pasar geospatial analytics AI tumbuh 31% CAGR hingga 2029. Profil data scientist + geospasial adalah kombinasi sangat langka dan sangat dicari di pasar global lintas industri."
+  },
+  {fac:"FPIPS",name:"Pendidikan Pariwisata",jenjang:"S1",diff:2,demand:3,flex:3,
+   difficulty_text:"Industri pariwisata, manajemen destinasi wisata, etika kepariwisataan, bahasa asing penunjang. Banyak studi lapangan dan kunjungan industri.",
+   jobs:["Guru Pariwisata SMK","Tour Guide / Tour Manager","Destination Marketing Officer","Travel Consultant","Event Coordinator"],
+   geo:["Indonesia","Malaysia","Thailand","Australia"],
+   geo_note:"Pemulihan pariwisata global menciptakan jutaan lapangan kerja baru. WTTC mencatat kontribusi pariwisata mencapai $11.7 triliun GDP 2025. Peluang mengajar di SMK pariwisata terus meningkat."
+  },
+  {fac:"FPIPS",name:"Ilmu Hukum",jenjang:"S1",diff:4,demand:3,flex:4,
+   difficulty_text:"Hukum perdata, pidana, tata negara, hukum internasional, litigasi, dan penalaran hukum. Ujian advokat (PERADI) sangat kompetitif dan membutuhkan waktu.",
+   jobs:["Advokat / Pengacara","Legal Counsel (Korporat)","Notaris","Diplomat / Staf Kemenlu","International Trade Lawyer"],
+   geo:["Indonesia","Singapura (Arbitrase)","Inggris (LLM)","Amerika Serikat","Belanda (Hukum Internasional)"],
+   geo_note:"Singapura adalah pusat arbitrase internasional Asia. Spesialisasi hukum perdagangan internasional, maritime law, dan investasi asing membuka akses firm hukum global."
+  },
+  {fac:"FPBS",name:"Pend. Bahasa & Sastra Indonesia",jenjang:"S1",diff:2,demand:2,flex:2,
+   difficulty_text:"Linguistik, sastra, sejarah bahasa Indonesia, kritik sastra, didaktik bahasa. Relatif ringan secara teknis dengan dominasi penulisan akademis.",
+   jobs:["Guru Bahasa Indonesia","Editor / Penulis","Jurnalis","Content Creator","BIPA Instructor"],
+   geo:["Indonesia","Malaysia","Timor Leste","BIPA (luar negeri)"],
+   geo_note:"Program BIPA membuka peluang mengajar di luar negeri melalui Kemendikbud. Negara-negara yang mulai membuka program bahasa Indonesia untuk diplomasi budaya terus bertambah."
+  },
+  {fac:"FPBS",name:"Pendidikan Bahasa Sunda",jenjang:"S1",diff:2,demand:1,flex:1,
+   difficulty_text:"Aksara Sunda, sastra Sunda, didaktik bahasa daerah. Sangat spesifik secara geografis untuk wilayah Jawa Barat.",
+   jobs:["Guru Bahasa Sunda","Peneliti Budaya Sunda","Pelestari Kesenian Daerah","Jurnalis Media Lokal"],
+   geo:["Indonesia (Jawa Barat)"],
+   geo_note:"Karir sangat terbatas pada wilayah Jawa Barat. Potensi berkembang di bidang pelestarian warisan budaya, pariwisata budaya, dan media lokal Sunda."
+  },
+  {fac:"FPBS",name:"Pendidikan Bahasa Inggris",jenjang:"S1",diff:3,demand:4,flex:5,
+   difficulty_text:"Linguistik Inggris, fonetik, pengajaran four skills (LSRW), micro-teaching, TESOL methodology, analisis wacana. Mahir berbicara dan menulis akademis wajib.",
+   jobs:["Guru Bahasa Inggris","TESOL/TEFL Teacher Internasional","English for Specific Purposes Trainer","Translator / Interpreter","Content Writer (English)","ELT Curriculum Developer"],
+   geo:["Korea Selatan","Jepang","China","Arab Saudi","Uni Emirat Arab","Eropa","Amerika Serikat","Australia"],
+   geo_note:"Permintaan guru bahasa Inggris berkualitas sangat tinggi di Asia Timur (Korea, Jepang, China) dan Timur Tengah. Program E-2 Visa Korea dan JET Programme Jepang membuka ribuan posisi setiap tahun."
+  },
+  {fac:"FPBS",name:"Pendidikan Bahasa Arab",jenjang:"S1",diff:4,demand:3,flex:3,
+   difficulty_text:"Nahwu, sharf, balaghah, tafsir, terjemah kitab klasik, pidato bahasa Arab. Sistem tata bahasa Arab sangat kompleks dan membutuhkan latihan intensif.",
+   jobs:["Guru Bahasa Arab","Penerjemah Arab-Indonesia","Diplomat Kemenlu","Pegawai Kedutaan","Konsultan Haji/Umrah"],
+   geo:["Arab Saudi","Uni Emirat Arab","Qatar","Mesir","Kuwait"],
+   geo_note:"Negara-negara Teluk membuka posisi pengajar dan penerjemah bagi penutur bahasa Arab mahir. Kedutaan besar dan lembaga internasional membutuhkan penerjemah Arab profesional."
+  },
+  {fac:"FPBS",name:"Pendidikan Bahasa Jepang",jenjang:"S1",diff:4,demand:3,flex:3,
+   difficulty_text:"Tiga sistem aksara (hiragana, katakana, kanji ±2000), keigo, linguistik Jepang, penerjemahan. JLPT N2/N1 adalah standar industri yang wajib dicapai.",
+   jobs:["Guru Bahasa Jepang","Interpreter Jepang","Staf Perusahaan Jepang","Technical Translator","Tourism Guide Jepang"],
+   geo:["Jepang","Indonesia (perusahaan Jepang)","Australia"],
+   geo_note:"Jepang menghadapi krisis tenaga kerja akut dan membuka skema Specified Skilled Worker bagi penutur Jepang fasih. Peluang sangat besar jika JLPT N2 atau N1 tercapai."
+  },
+  {fac:"FPBS",name:"Pendidikan Bahasa Jerman",jenjang:"S1",diff:4,demand:3,flex:3,
+   difficulty_text:"Deklinasi, konjugasi, kasus gramatikal Jerman (Nominativ, Akkusativ, Dativ, Genitiv), terjemahan teknis, Landeskunde. DSH/TestDaF adalah standar masuk universitas Jerman.",
+   jobs:["Guru Bahasa Jerman","Penerjemah Jerman","Staf Perusahaan Jerman","Akademisi","Tour Guide"],
+   geo:["Jerman","Austria","Swiss"],
+   geo_note:"Jerman mengalami kekurangan 340.000+ tenaga kerja terampil (2025). Berbahasa Jerman sangat meningkatkan peluang bekerja di Jerman, ekonomi terbesar ke-3 dunia dengan upah minimum tertinggi di Eropa."
+  },
+  {fac:"FPBS",name:"Pendidikan Bahasa Perancis",jenjang:"S1",diff:3,demand:3,flex:3,
+   difficulty_text:"Tata bahasa Perancis kompleks (genre, konjugasi subjunktif, temps du passé), terjemahan, sastra Perancis, francophonie dan budaya Eropa.",
+   jobs:["Guru Bahasa Perancis","Penerjemah Perancis","Diplomat Kemenlu","Staf Organisasi Internasional (PBB, UNESCO)"],
+   geo:["Perancis","Kanada (Quebec)","Belgia","Afrika Frankofon","Organisasi Internasional PBB"],
+   geo_note:"Bahasa Perancis adalah bahasa resmi 29 negara dan banyak organisasi internasional (PBB, NATO, IOC, WHO). Afrika Frankofon tumbuh pesat secara ekonomi dan membutuhkan tenaga profesional."
+  },
+  {fac:"FPBS",name:"Bahasa dan Sastra Inggris",jenjang:"S1",diff:3,demand:4,flex:5,
+   difficulty_text:"Sastra Inggris, kritik sastra, linguistik terapan, penerjemahan profesional. Lebih ringan dari linguistik murni namun menuntut kefasihan yang sangat tinggi.",
+   jobs:["Penerjemah / Interpreter Tersertifikasi","Content Writer / Copywriter","Localization Specialist","Staf Kemenlu","Editor Penerbitan Internasional","Subtitler"],
+   geo:["Amerika Serikat","Inggris","Australia","Singapura","Uni Emirat Arab","Seluruh Dunia (remote)"],
+   geo_note:"Localization dan translation industry global bernilai $56 miliar. Permintaan penerjemah Inggris–Indonesia sangat tinggi di platform teknologi global yang ekspansi ke Indonesia dan Asia Tenggara."
+  },
+  {fac:"FPBS",name:"Bahasa dan Sastra Indonesia",jenjang:"S1",diff:2,demand:2,flex:3,
+   difficulty_text:"Linguistik Indonesia, sastra, jurnalisme, penerbitan. Lebih fokus ke karir kreatif dan editorial dengan praktik penulisan intensif.",
+   jobs:["Editor / Penulis","Jurnalis","Content Creator","Peneliti Sastra","BIPA Instructor","Copywriter"],
+   geo:["Indonesia","Malaysia"],
+   geo_note:"Karir utama di Indonesia. Pertumbuhan industri media digital Indonesia membuka banyak peluang untuk konten kreator dan editor profesional yang sangat dibutuhkan."
+  },
+  {fac:"FPBS",name:"Pendidikan Bahasa Korea",jenjang:"S1",diff:4,demand:4,flex:4,
+   difficulty_text:"Hangul, tata bahasa Korea (partikel, tingkat keformalan), hanja dasar, budaya Korea, TOPIK (Test of Proficiency in Korean) level III minimal untuk bekerja.",
+   jobs:["Guru Bahasa Korea","Penerjemah Korea-Indonesia","Staf Perusahaan Korea","K-Industry Liaison","Tourism Guide Korea"],
+   geo:["Korea Selatan","Indonesia (perusahaan Korea)","Singapura"],
+   geo_note:"Hallyu (Korean Wave) menciptakan ledakan permintaan profesional bahasa Korea secara global. Korea adalah investor terbesar ke-5 di Indonesia. Samsung, Hyundai, LG, Lotte membutuhkan penerjemah Indonesia-Korea dalam jumlah besar."
+  },
+  {fac:"FPMIPA",name:"Pendidikan Matematika",jenjang:"S1",diff:4,demand:3,flex:4,
+   difficulty_text:"Kalkulus, aljabar linear, statistika, teori bilangan, analisis real, topologi, dan metode pembelajaran matematika. Salah satu jurusan paling berat secara akademis di UPI.",
+   jobs:["Guru Matematika","Aktuaris","Data Analyst","Quantitative Analyst (Quant)","Financial Modeler","Statistician"],
+   geo:["Amerika Serikat","Inggris","Singapura","Australia","Belanda"],
+   geo_note:"Pemahaman matematika kuat membuka akses ke industri keuangan global (quant finance, aktuaria). Aktuaris adalah salah satu profesi tertinggi bayarannya dan kekurangan tenaga di banyak negara maju."
+  },
+  {fac:"FPMIPA",name:"Pendidikan Fisika",jenjang:"S1",diff:5,demand:3,flex:3,
+   difficulty_text:"Mekanika klasik, elektromagnetisme, termodinamika, fisika kuantum, fisika modern, praktikum laboratorium intensif. Salah satu jurusan MIPA paling berat secara konseptual.",
+   jobs:["Guru Fisika","Peneliti Fisika","Medical Physicist","Quality Engineer","Semiconductor Engineer"],
+   geo:["Amerika Serikat","Eropa (CERN)","Australia","Jepang","Jerman"],
+   geo_note:"Fisika terapan membuka peluang di industri semikonduktor, nuklir, dan medis. Medical physicist sangat dibutuhkan di Australia dan AS. Peneliti fisika di CERN Eropa sangat kompetitif namun bergengsi."
+  },
+  {fac:"FPMIPA",name:"Pendidikan Biologi",jenjang:"S1",diff:4,demand:3,flex:4,
+   difficulty_text:"Biokimia, genetika, mikrobiologi, ekologi, anatomi, fisiologi, dan praktikum laboratorium intensif. Banyak mata kuliah hafalan dan analisis laboratorium yang teliti.",
+   jobs:["Guru Biologi","Peneliti Bioteknologi","Environmental Scientist","Lab Analyst","Medical Science Liaison"],
+   geo:["Amerika Serikat","Inggris","Australia","Jerman","Singapura"],
+   geo_note:"Industri biotech dan farmasi global sangat membutuhkan lulusan biologi dengan keahlian lab. Jerman dan Singapura adalah hub bioteknologi dengan permintaan tenaga kerja tinggi."
+  },
+  {fac:"FPMIPA",name:"Pendidikan Kimia",jenjang:"S1",diff:5,demand:3,flex:4,
+   difficulty_text:"Kimia organik, anorganik, analitik, fisik, biokimia, dan praktikum kimia intensif dengan hazardous materials. Tingkat kesulitan sangat tinggi karena kombinasi konseptual + praktis.",
+   jobs:["Guru Kimia","Chemist / Analis Lab","Quality Control Engineer","R&D Scientist (Farmasi)","Regulatory Affairs Specialist"],
+   geo:["Jerman","Amerika Serikat","Singapura","Belanda","Jepang"],
+   geo_note:"Jerman adalah pusat industri kimia global (BASF, Bayer, Henkel). Industri farmasi dan kosmetik membutuhkan ahli kimia analitik secara masif di Asia dan Eropa."
+  },
+  {fac:"FPMIPA",name:"Pendidikan Ilmu Komputer",jenjang:"S1",diff:4,demand:5,flex:5,
+   difficulty_text:"Pemrograman (Python, Java, C++), struktur data, algoritma, basis data, rekayasa perangkat lunak, didaktika informatika. Mirip ilmu komputer murni dengan tambahan kompetensi pedagogik.",
+   jobs:["Guru Informatika / Coding","Software Engineer","Data Analyst","EdTech Developer","IT Instructor Korporat","Curriculum Tech Developer"],
+   geo:["Amerika Serikat","Inggris","Jerman","Singapura","Australia","Kanada","Belanda"],
+   geo_note:"IDC: 90%+ perusahaan global mengalami IT skills shortage hingga 2026. Kombinasi pedagogik+teknis sangat dicari untuk corporate trainer dan EdTech. Gaji median software engineer AS: $161K."
+  },
+  {fac:"FPMIPA",name:"Matematika",jenjang:"S1",diff:5,demand:4,flex:5,
+   difficulty_text:"Analisis real, aljabar abstrak, topologi, teori probabilitas, matematika komputasi. Sangat abstrak dan teoritis. Salah satu jurusan paling menantang secara intelektual.",
+   jobs:["Aktuaris","Quantitative Analyst (Quant Finance)","Data Scientist","Kriptografer","Peneliti Matematika","Machine Learning Engineer"],
+   geo:["Amerika Serikat","Inggris","Singapura","Jerman","Kanada","Australia"],
+   geo_note:"Lulusan matematika murni memiliki kemampuan berpikir abstrak yang sangat dicari di Wall Street, Silicon Valley, dan industri AI. Aktuaris menghasilkan $100K+ per tahun di AS. Pasar sangat global."
+  },
+  {fac:"FPMIPA",name:"Fisika",jenjang:"S1",diff:5,demand:3,flex:4,
+   difficulty_text:"Fisika teori tingkat lanjut, mekanika kuantum, fisika statistik, astrofisika, dan komputasi saintifik. Butuh kemampuan matematika yang sangat tinggi.",
+   jobs:["Peneliti Fisika","Medical Physicist","Semiconductor Engineer","Nuclear Physicist","Computational Scientist","Quantum Computing Researcher"],
+   geo:["Amerika Serikat","Eropa (CERN, ESA)","Jepang","Jerman","Inggris"],
+   geo_note:"Industri semikonduktor, komputasi kuantum, dan energi nuklir terus merekrut fisikawan. Quantum computing adalah frontier baru dengan investasi ratusan miliar dolar secara global."
+  },
+  {fac:"FPMIPA",name:"Biologi",jenjang:"S1",diff:4,demand:4,flex:4,
+   difficulty_text:"Biologi molekuler, bioinformatika, ekologi, sistematika, fisiologi lanjutan. Banyak penelitian lab dengan instrumentasi canggih dan field work intensif.",
+   jobs:["Peneliti Bioteknologi","Bioinformatician","Conservation Scientist","Pharmaceutical Researcher","Ecologist","Marine Biologist"],
+   geo:["Amerika Serikat","Inggris","Jerman","Singapura","Australia","Belanda"],
+   geo_note:"Biotech dan farmasi adalah industri triliunan dolar. Singapura adalah hub biotech Asia dengan perekrutan aktif. Konservasi lingkungan juga menjadi karir global yang tumbuh pesat."
+  },
+  {fac:"FPMIPA",name:"Kimia",jenjang:"S1",diff:5,demand:4,flex:4,
+   difficulty_text:"Kimia organik dan anorganik lanjutan, kimia komputasi, spektroskopi, sintesis senyawa. Beban laboratorium sangat berat dengan eksperimen kompleks dan rigorous.",
+   jobs:["Research Chemist","Process Engineer (Kimia)","Pharmaceutical Scientist","Materials Scientist","Environmental Chemist"],
+   geo:["Jerman","Amerika Serikat","Singapura","Belanda","Belgia","Jepang"],
+   geo_note:"Jerman membutuhkan 100.000+ ilmuwan kimia. Industri farmasi (Pfizer, Roche, Novartis) aktif merekrut chemist untuk R&D di Swiss, Jerman, dan AS dengan kompensasi sangat kompetitif."
+  },
+  {fac:"FPMIPA",name:"Ilmu Komputer",jenjang:"S1",diff:5,demand:5,flex:5,
+   difficulty_text:"Struktur data dan algoritma lanjutan, sistem operasi, jaringan komputer, kecerdasan buatan, keamanan siber, cloud computing. Salah satu jurusan dengan persaingan akademis paling ketat.",
+   jobs:["Software Engineer","Machine Learning Engineer","Cybersecurity Analyst","Cloud Architect","Full-Stack Developer","AI / Data Scientist"],
+   geo:["Amerika Serikat","Kanada","Jerman","Belanda","Singapura","Australia","Inggris","India (MNC)","Uni Emirat Arab"],
+   geo_note:"IDC: 90% perusahaan global kekurangan IT talent hingga 2026. AI roles tumbuh 50-100% YoY (LinkedIn). Gaji software engineer median $161K di AS. Remote-work memungkinkan kontrak dengan perusahaan global."
+  },
+  {fac:"FPMIPA",name:"Pend. IPA (International Program)",jenjang:"S1",diff:5,demand:4,flex:4,
+   difficulty_text:"Sains terintegrasi dalam bahasa Inggris, riset pendidikan sains, metodologi pengajaran internasional, kurikulum IB/Cambridge. Sangat berat secara bilingual dan multidisiplin.",
+   jobs:["Science Teacher (Sekolah Internasional)","IB / Cambridge Examiner","Curriculum Developer","Science Education Researcher"],
+   geo:["Singapura","Malaysia","China","Timur Tengah","Australia","Amerika Serikat"],
+   geo_note:"Sekolah internasional IB/Cambridge terus berkembang di Asia. Guru sains bilingual (Inggris) sangat langka dan dibayar premium di sekolah internasional ASEAN."
+  },
+  {fac:"FPTI",name:"Pendidikan Teknik Arsitektur",jenjang:"S1",diff:4,demand:3,flex:3,
+   difficulty_text:"Desain arsitektur, gambar teknik, AutoCAD/Revit/SketchUp, struktur bangunan, sejarah arsitektur, studio desain intensif dengan deadline ketat.",
+   jobs:["Guru SMK Arsitektur","Drafter / CAD Operator","Junior Architect","BIM Specialist","Interior Designer"],
+   geo:["Uni Emirat Arab","Singapura","Australia","Inggris"],
+   geo_note:"BIM (Building Information Modeling) adalah kompetensi sangat dicari secara global. UAE terus membangun mega-proyek infrastruktur bernilai ratusan miliar dolar yang membutuhkan drafter dan arsitek asing."
+  },
+  {fac:"FPTI",name:"Pendidikan Teknik Bangunan",jenjang:"S1",diff:3,demand:3,flex:3,
+   difficulty_text:"Konstruksi bangunan, estimasi biaya, manajemen proyek konstruksi, K3 bangunan, dan gambar teknik bangunan.",
+   jobs:["Guru Teknik Bangunan","Site Engineer","Quantity Surveyor","Project Supervisor","Building Inspector"],
+   geo:["Indonesia","Malaysia","Australia","Timur Tengah"],
+   geo_note:"Australia mengalami boom konstruksi perumahan. Quantity surveyor dan site engineer dengan sertifikat internasional (RICS) sangat dicari di Australia dan Timur Tengah."
+  },
+  {fac:"FPTI",name:"Pendidikan Teknik Elektro",jenjang:"S1",diff:4,demand:4,flex:4,
+   difficulty_text:"Rangkaian elektronik, sistem kendali, PLC, mikrokontroler, sistem tenaga listrik. Kombinasi teori elektro dan kompetensi pedagogik yang intensif.",
+   jobs:["Guru Teknik Elektro","Electrical Engineer","PLC Programmer","Automation Technician","Power Systems Engineer"],
+   geo:["Jerman","Australia","Amerika Serikat","Singapura","Malaysia"],
+   geo_note:"Teknik elektro adalah fondasi industri otomasi, energi terbarukan, dan manufaktur modern. Kekurangan tenaga listrik dan otomasi sangat akut di Jerman dan Australia."
+  },
+  {fac:"FPTI",name:"Pendidikan Teknik Mesin",jenjang:"S1",diff:4,demand:3,flex:4,
+   difficulty_text:"Mekanika teknik, termodinamika, manufaktur, CAD/CAM, material teknik, proses produksi. Praktikum bengkel dan lab sangat intensif.",
+   jobs:["Guru Teknik Mesin","Mechanical Engineer","Manufacturing Engineer","Maintenance Engineer","Product Designer","EV Powertrain Engineer"],
+   geo:["Jerman","Jepang","Korea Selatan","Amerika Serikat","Australia"],
+   geo_note:"Jerman dan Jepang adalah raksasa manufaktur yang kekurangan insinyur mesin. Industri otomotif EV membutuhkan insinyur mesin dengan skill material baru dan electric powertrain."
+  },
+  {fac:"FPTI",name:"Pendidikan Kesejahteraan Keluarga",jenjang:"S1",diff:2,demand:2,flex:3,
+   difficulty_text:"Tata boga, tata busana, dan kesehatan keluarga secara terpadu. Praktis namun kurang teknis secara akademis, lebih menekankan praktik vokasional.",
+   jobs:["Guru PKK","Home Economist","Nutrition Educator","Family Welfare Officer","Parenting Educator"],
+   geo:["Indonesia","Malaysia"],
+   geo_note:"Karir terutama domestik. Bisa berkembang ke wellness dan family education consulting jika dikombinasikan dengan sertifikasi internasional di bidang nutrisi atau parenting."
+  },
+  {fac:"FPTI",name:"Pendidikan Tata Boga",jenjang:"S1",diff:3,demand:3,flex:3,
+   difficulty_text:"Kuliner Indonesia dan internasional, pastry and bakery, food science, manajemen dapur, higiene pangan (HACCP). Praktikum dapur intensif dan kreatif.",
+   jobs:["Guru Tata Boga","Chef / Sous Chef","Food Stylist","Culinary Instructor","F&B Entrepreneur","Recipe Developer"],
+   geo:["Singapura","Australia","Uni Emirat Arab","Amerika Serikat"],
+   geo_note:"Singapura adalah hub kuliner Asia Tenggara dengan banyak restoran bintang Michelin. Peluang di sekolah memasak internasional sangat terbuka dengan sertifikasi culinary arts diakui."
+  },
+  {fac:"FPTI",name:"Pendidikan Tata Busana",jenjang:"S1",diff:3,demand:3,flex:3,
+   difficulty_text:"Desain busana, konstruksi pola, tekstil, manajemen fashion, tren mode. Kombinasi kemampuan kreatif dan teknis jahit yang tinggi.",
+   jobs:["Guru Tata Busana","Fashion Designer","Textile Merchandiser","Costume Designer","Fashion Buyer","Sustainable Fashion Consultant"],
+   geo:["Italia","Perancis","Inggris","Amerika Serikat","Singapura"],
+   geo_note:"Industri fashion global bernilai $1.7 triliun. Milan, Paris, London, dan New York adalah pusat mode dunia. Sustainable fashion membuka niche baru yang sangat diminati oleh brand global."
+  },
+  {fac:"FPTI",name:"Teknik Elektro",jenjang:"S1",diff:5,demand:5,flex:5,
+   difficulty_text:"Sinyal dan sistem, rangkaian elektronik lanjutan, sistem kendali otomatis, power electronics, embedded systems, robotika. Salah satu jurusan teknik paling berat dan kompetitif.",
+   jobs:["Electrical Engineer","Automation Engineer","IoT Engineer","Power Engineer","Chip Design Engineer","Renewable Energy Engineer"],
+   geo:["Jerman","Amerika Serikat","Singapura","Australia","Belanda","Korea Selatan","Jepang"],
+   geo_note:"Kekurangan insinyur elektro akut secara global. Jerman membutuhkan 340.000+ insinyur. Pertumbuhan EV, smart grid, dan energi terbarukan mendorong permintaan besar. Gaji sangat kompetitif."
+  },
+  {fac:"FPTI",name:"Teknik Sipil",jenjang:"S1",diff:4,demand:4,flex:4,
+   difficulty_text:"Mekanika tanah, struktur beton, baja, hidrologi, manajemen konstruksi, CAD dan BIM. Proyek tugas akhir dan kuliah lapangan sangat berat.",
+   jobs:["Civil Engineer","Structural Engineer","Project Manager Konstruksi","Quantity Surveyor","Infrastructure Consultant"],
+   geo:["Australia","Amerika Serikat","Uni Emirat Arab","Inggris","Kanada","Singapura","Qatar"],
+   geo_note:"BLS AS: 5% pertumbuhan posisi civil engineer hingga 2032. Australia dan Timur Tengah terus membangun infrastruktur besar-besaran. Sertifikasi PE (Professional Engineer) membuka akses pasar AS dan Kanada."
+  },
+  {fac:"FPTI",name:"Pend. Teknologi Agroindustri",jenjang:"S1",diff:3,demand:3,flex:3,
+   difficulty_text:"Teknologi pangan, manajemen rantai pasok pertanian, pengolahan hasil pertanian, analisis usaha tani, dan kewirausahaan agribisnis.",
+   jobs:["Guru Agroindustri","Agri-Food Technologist","Supply Chain Manager (Agro)","Food Processing Engineer","Agribusiness Consultant"],
+   geo:["Indonesia","Malaysia","Australia (agribusiness)","Belanda"],
+   geo_note:"Ketahanan pangan global menjadi prioritas strategis. Australia dan Belanda adalah pusat agribusiness global dengan teknologi pertanian canggih yang terus merekrut tenaga ahli."
+  },
+  {fac:"FPTI",name:"Arsitektur",jenjang:"S1",diff:4,demand:4,flex:4,
+   difficulty_text:"Studio desain intensif (deadline culture ketat), sejarah arsitektur, teori desain, teknologi bangunan, BIM, parametric design. Portofolio sangat krusial untuk karir.",
+   jobs:["Arsitek","BIM Specialist","Urban Designer","Interior Architect","Sustainable Design Consultant","Real Estate Developer"],
+   geo:["Uni Emirat Arab","Singapura","Australia","Inggris","Amerika Serikat","Belanda","Jerman"],
+   geo_note:"UAE membangun mega-proyek senilai ratusan miliar USD. BIM expertise adalah tiket masuk firma arsitektur global. Sustainable architecture adalah spesialisasi masa depan yang sangat diminati."
+  },
+  {fac:"FPTI",name:"Pendidikan Teknik Otomotif",jenjang:"S1",diff:3,demand:3,flex:3,
+   difficulty_text:"Sistem kendaraan, engine, transmisi, sistem EV, diagnostik kendaraan, manajemen bengkel. Praktikum mekanik sangat intensif.",
+   jobs:["Guru Teknik Otomotif","Automotive Engineer","EV Technician","Automotive Service Manager","Product Engineer Kendaraan"],
+   geo:["Jerman","Jepang","Korea Selatan","Amerika Serikat"],
+   geo_note:"Transisi ke kendaraan listrik (EV) menciptakan permintaan baru untuk tenaga ahli EV powertrain. Jerman (BMW, Volkswagen) dan Jepang (Toyota, Honda) terus merekrut insinyur otomotif."
+  },
+  {fac:"FPTI",name:"Teknik Logistik",jenjang:"S1",diff:4,demand:5,flex:5,
+   difficulty_text:"Supply chain management, warehousing, transportation optimization, analisis data logistik, ERP systems (SAP), simulasi dan pemodelan rantai pasok.",
+   jobs:["Logistics Engineer","Supply Chain Manager","Operations Research Analyst","Procurement Specialist","3PL Manager","Freight Forwarder"],
+   geo:["Singapura","Belanda","Amerika Serikat","Jerman","Uni Emirat Arab","Australia"],
+   geo_note:"Singapura adalah hub logistik Asia terbesar. Belanda (Port of Rotterdam) adalah pusat logistik Eropa. Transformasi digital supply chain mendorong permintaan logistik engineer secara masif."
+  },
+  {fac:"FPTI",name:"Pend. Teknik Otomasi & Robotika",jenjang:"S1",diff:5,demand:5,flex:5,
+   difficulty_text:"Robotika industri, PLC/SCADA, computer vision, kontrol otomatis, IoT industri (IIoT), pemrograman robot (ROS). Salah satu program paling cutting-edge dan berat di seluruh UPI.",
+   jobs:["Robotics Engineer","Automation Engineer","Industrial IoT Specialist","Control Systems Engineer","AI Integration Engineer","Industry 4.0 Consultant"],
+   geo:["Jerman","Amerika Serikat","Jepang","Korea Selatan","Singapura","Belanda","China"],
+   geo_note:"WEF: otomasi akan menciptakan 97 juta pekerjaan baru. Jerman dan Jepang kekurangan automation engineer secara sangat akut. Ini adalah salah satu program studi dengan prospek karir paling menjanjikan dekade ini."
+  },
+  {fac:"FPTI",name:"Teknologi Pangan",jenjang:"S1",diff:4,demand:4,flex:4,
+   difficulty_text:"Ilmu pangan, biokimia pangan, pengolahan dan pengawetan pangan, food safety (HACCP/ISO 22000), gizi, teknologi fermentasi. Lab intensif dan project based learning.",
+   jobs:["Food Technologist","Product Developer (FMCG)","Food Safety Auditor","Quality Assurance Manager","R&D Food Scientist"],
+   geo:["Belanda","Amerika Serikat","Australia","Singapura","Inggris","Jerman"],
+   geo_note:"Belanda (Wageningen University) adalah pusat riset pangan dunia. Industri pangan global senilai $8+ triliun. Permintaan food technologist meningkat seiring tren pangan sehat, vegan, dan sustainable food."
+  },
+  {fac:"FPTI",name:"Teknik Energi Terbarukan",jenjang:"S1",diff:5,demand:5,flex:5,
+   difficulty_text:"Teknik surya, angin, hidro, biomassa, grid integration, energy storage, pemodelan energi. Kombinasi teknik elektro + lingkungan + ekonomi energi yang sangat kompleks.",
+   jobs:["Renewable Energy Engineer","Solar / Wind Project Manager","Energy Storage Specialist","Grid Integration Engineer","Sustainability Consultant","Energy Policy Analyst"],
+   geo:["Jerman","Amerika Serikat","Australia","Belanda","Denmark","Inggris","Singapura"],
+   geo_note:"IEA: sektor energi menciptakan 76 juta pekerjaan global (2024). Jerman menargetkan 80% energi terbarukan pada 2030. UK butuh 200.000 pekerja clean energy. Permintaan skill hijau tumbuh 9%/tahun."
+  },
+  {fac:"FPTI",name:"Teknik Kimia",jenjang:"S1",diff:5,demand:4,flex:5,
+   difficulty_text:"Termodinamika kimia, transfer massa dan panas, kinetika reaksi, simulasi proses (ASPEN PLUS), desain reaktor. Salah satu jurusan teknik paling berat dan paling luas aplikasinya.",
+   jobs:["Chemical Engineer","Process Engineer","Petrochemical Engineer","Environmental Engineer","Pharmaceutical Process Engineer","Materials Engineer"],
+   geo:["Amerika Serikat","Jerman","Belanda","Arab Saudi","Uni Emirat Arab","Singapura","Australia"],
+   geo_note:"Jerman dan AS adalah rumah bagi perusahaan kimia terbesar dunia. Timur Tengah (SABIC, ADNOC) merekrut chemical engineer secara masif untuk industri petrokimia. Bioproses dan green chemistry juga tumbuh pesat."
+  },
+  {fac:"FPOK",name:"Pendidikan Kepelatihan Olahraga",jenjang:"S1",diff:3,demand:3,flex:3,
+   difficulty_text:"Fisiologi olahraga, biomekanik, psikologi olahraga, nutrisi atlet, metodologi pelatihan. Praktik lapangan sangat intensif dan fisik.",
+   jobs:["Pelatih Olahraga Nasional","Sport Performance Coach","Strength & Conditioning Coach","Athletic Development Specialist","Sport Talent Scout"],
+   geo:["Australia","Inggris","Amerika Serikat","Uni Emirat Arab"],
+   geo_note:"Industri olahraga profesional global bernilai $500+ miliar. Klub sepakbola Eropa dan liga olahraga AS mencari S&C coach bersertifikat internasional (NSCA/CSCS) secara aktif."
+  },
+  {fac:"FPOK",name:"Pendidikan Jasmani, Kesehatan & Rekreasi",jenjang:"S1",diff:2,demand:3,flex:3,
+   difficulty_text:"Anatomi dan fisiologi, pedagogi pendidikan jasmani, praktik olahraga renang, senam, atletik, dan rekreasi. Sangat fisik namun tidak terlalu berat secara akademis teoritis.",
+   jobs:["Guru Pendidikan Jasmani","PE Teacher (Sekolah Internasional)","Fitness Instructor","Recreation Manager","Sports Program Coordinator"],
+   geo:["Singapura","Australia","Uni Emirat Arab","Inggris","Amerika Serikat"],
+   geo_note:"Sekolah internasional terus merekrut guru Penjas bersertifikat. Singapura memiliki standar ketat namun gaji kompetitif. Industri fitness dan wellness global tumbuh 7% per tahun."
+  },
+  {fac:"FPOK",name:"PGSD Pendidikan Jasmani",jenjang:"S1",diff:2,demand:2,flex:2,
+   difficulty_text:"Pedagogik olahraga untuk anak SD, permainan anak, senam, renang, dan olahraga rekreasi dasar. Lebih pedagogis daripada teknis.",
+   jobs:["Guru Penjas SD","Primary PE Teacher","Sports Club Coach Anak-Anak","Movement Educator"],
+   geo:["Indonesia","Malaysia","Sekolah Internasional ASEAN"],
+   geo_note:"Peluang di sekolah internasional ASEAN yang membutuhkan guru Penjas SD bersertifikat. Sertifikasi CPT atau ISSA membuka pasar fitness anak internasional."
+  },
+  {fac:"FPOK",name:"Ilmu Keolahragaan",jenjang:"S1",diff:3,demand:3,flex:4,
+   difficulty_text:"Sport science, biomekanik, fisiologi latihan, analisis performa, epidemiologi olahraga, manajemen sport. Lebih ilmiah daripada program kepelatihan.",
+   jobs:["Sports Scientist","Performance Analyst","Exercise Physiologist","Sport Administrator","Wellness Program Manager"],
+   geo:["Australia","Inggris","Amerika Serikat","Belanda","Jerman"],
+   geo_note:"Data analytics dalam olahraga profesional tumbuh pesat. Premier League, NBA, dan NFL menggunakan sport scientist dan performance analyst secara ekstensif. Australia memiliki ekosistem sport science terbaik di Asia-Pasifik."
+  },
+  {fac:"FPOK",name:"Keperawatan",jenjang:"S1",diff:4,demand:5,flex:4,
+   difficulty_text:"Anatomi, fisiologi, farmakologi, keperawatan medikal-bedah, keperawatan jiwa, maternitas, dan praktik klinik intensif (700+ jam). Ujian NCLEX/OSCE diperlukan untuk kerja luar negeri.",
+   jobs:["Registered Nurse","ICU / Critical Care Nurse","Nurse Educator","Community Health Nurse","Travel Nurse"],
+   geo:["Inggris","Australia","Kanada","Jerman","Amerika Serikat","Arab Saudi","Uni Emirat Arab","Selandia Baru"],
+   geo_note:"WHO: kekurangan 13 juta perawat global pada 2030. NHS Inggris merekrut 50.000 perawat asing. Jerman membutuhkan 100.000+ perawat. Australia mempercepat jalur AHPRA (1-3 bulan). Gaji £28K-£40K+ di UK."
+  },
+  {fac:"FPOK",name:"Kepelatihan Fisik Olahraga",jenjang:"S1",diff:3,demand:3,flex:3,
+   difficulty_text:"Strength training, periodisasi latihan, tes kondisi fisik, rehabilitasi olahraga dasar, pemrograman latihan individual dan tim.",
+   jobs:["Strength & Conditioning Coach","Personal Trainer","Athletic Trainer","Fitness Director","Sports Rehabilitation Specialist"],
+   geo:["Australia","Amerika Serikat","Inggris","Uni Emirat Arab"],
+   geo_note:"Industri wellness dan fitness global bernilai $7 triliun (2025). Sertifikasi NSCA-CSCS atau ACSM membuka akses pasar internasional secara signifikan dan meningkatkan gaji."
+  },
+  {fac:"FPOK",name:"Gizi",jenjang:"S1",diff:4,demand:4,flex:4,
+   difficulty_text:"Biokimia gizi, ilmu pangan, epidemiologi gizi, dietetika klinis, konsultasi gizi, metabolisme. Ujian registrasi ahli gizi (RD) diperlukan untuk praktik klinis penuh.",
+   jobs:["Ahli Gizi / Dietisien","Sports Nutritionist","Clinical Dietitian","Food & Nutrition Researcher","Public Health Nutritionist","Wellness Consultant"],
+   geo:["Australia","Inggris","Kanada","Amerika Serikat","Uni Emirat Arab","Singapura"],
+   geo_note:"Tren wellness, olahraga, dan penyakit kronis mendorong permintaan dietisien secara global. Australia dan Kanada mengakui credential gizi Indonesia jika memenuhi standar akreditasi internasional."
+  },
+  {fac:"FPEB",name:"Pendidikan Akuntansi",jenjang:"S1",diff:4,demand:3,flex:4,
+   difficulty_text:"Akuntansi keuangan, biaya, manajemen, audit, perpajakan, sistem informasi akuntansi, dan metodologi pengajaran. Standar IFRS dan SAK wajib dikuasai.",
+   jobs:["Guru Akuntansi","Akuntan Publik","Internal Auditor","Tax Consultant","Financial Analyst"],
+   geo:["Indonesia","Singapura","Australia","Malaysia"],
+   geo_note:"Sertifikasi CA, CPA, atau ACCA meningkatkan daya saing internasional secara drastis. Singapura sebagai pusat keuangan Asia menerima akuntan bersertifikasi asing dengan gaji premium."
+  },
+  {fac:"FPEB",name:"Pendidikan Bisnis",jenjang:"S1",diff:3,demand:3,flex:4,
+   difficulty_text:"Manajemen bisnis, kewirausahaan, pemasaran, etika bisnis, metodologi pengajaran bisnis. Cukup luas cakupannya namun tidak terlalu dalam di satu bidang.",
+   jobs:["Guru Bisnis / Kewirausahaan","Business Consultant","Entrepreneur","Sales Manager","Business Development Executive"],
+   geo:["Indonesia","Singapura","Malaysia","Australia"],
+   geo_note:"Ekosistem startup Asia Tenggara tumbuh pesat. Singapura adalah hub startup terbesar ASEAN. Sertifikasi MBA meningkatkan nilai internasional secara signifikan."
+  },
+  {fac:"FPEB",name:"Pendidikan Manajemen Perkantoran",jenjang:"S1",diff:2,demand:2,flex:3,
+   difficulty_text:"Manajemen administrasi, kearsipan, korespondensi bisnis, teknologi perkantoran digital. Relatif ringan namun harus menguasai aplikasi perkantoran dengan sangat baik.",
+   jobs:["Guru Administrasi Perkantoran","Office Manager","Executive Assistant","Records Manager","Administrative Coordinator"],
+   geo:["Indonesia","Singapura","Malaysia"],
+   geo_note:"Peluang internasional ada sebagai bilingual executive assistant di perusahaan multinasional. Digitalisasi menggeser peran ke arah operations management dan project coordination."
+  },
+  {fac:"FPEB",name:"Pendidikan Ekonomi",jenjang:"S1",diff:3,demand:3,flex:4,
+   difficulty_text:"Mikro dan makro ekonomi, ekonometri, sejarah pemikiran ekonomi, dan didaktika ilmu ekonomi. Statistika dan software ekonometri (STATA, R) penting dikuasai.",
+   jobs:["Guru Ekonomi","Economic Analyst","Policy Analyst","Research Economist","Financial Planner"],
+   geo:["Indonesia","Amerika Serikat (PhD)","Inggris","Australia","Lembaga Internasional (World Bank, IMF, ADB)"],
+   geo_note:"Ekonometri dan analisis data ekonomi adalah skill yang dicari institusi internasional. Pendidikan S2/S3 sangat membuka akses karir internasional di World Bank, ADB, atau IMF."
+  },
+  {fac:"FPEB",name:"Manajemen",jenjang:"S1",diff:3,demand:4,flex:5,
+   difficulty_text:"Manajemen strategi, keuangan, pemasaran, SDM, operasi, dan riset bisnis. Cakupan luas memberi pemahaman holistik tentang bisnis namun tidak terlalu mendalam di satu area.",
+   jobs:["Business Manager","Product Manager","Operations Manager","Brand Manager","Management Consultant","Entrepreneur"],
+   geo:["Singapura","Amerika Serikat","Inggris","Australia","Uni Emirat Arab","Belanda"],
+   geo_note:"Singapura adalah hub bisnis Asia Tenggara. Management consultant sangat dibutuhkan di firma global (McKinsey, BCG, Deloitte). MBA dari universitas terkemuka secara signifikan meningkatkan akses."
+  },
+  {fac:"FPEB",name:"Akuntansi",jenjang:"S1",diff:4,demand:4,flex:5,
+   difficulty_text:"Akuntansi keuangan IFRS, audit, perpajakan, akuntansi manajemen, sistem ERP (SAP/Oracle), analisis laporan keuangan. Sertifikasi CPA/CA/ACCA diperlukan untuk karir global.",
+   jobs:["Akuntan Publik (CPA)","Auditor (Big 4)","Financial Controller","Tax Advisor","Forensic Accountant","CFO"],
+   geo:["Singapura","Australia","Inggris","Amerika Serikat","Kanada","Uni Emirat Arab"],
+   geo_note:"Big 4 (Deloitte, PwC, EY, KPMG) memiliki kantor di 150+ negara dan merekrut secara global. Singapura dan AS menawarkan gaji akuntan sangat kompetitif. ACCA atau CPA Australia adalah jalur paling pragmatis."
+  },
+  {fac:"FPEB",name:"Ilmu Ekonomi & Keuangan Islam",jenjang:"S1",diff:4,demand:4,flex:4,
+   difficulty_text:"Ekonomi syariah, fiqh muamalah, perbankan Islam, pasar modal syariah, akuntansi syariah, bahasa Arab untuk bisnis. Kombinasi unik ekonomi modern + hukum Islam.",
+   jobs:["Bankir Syariah","Sharia Compliance Officer","Islamic Finance Analyst","Takaful Specialist","Sukuk Analyst","Sharia Auditor"],
+   geo:["Malaysia","Arab Saudi","Uni Emirat Arab","Inggris (London)","Qatar","Kuwait","Bahrain"],
+   geo_note:"Industri keuangan Islam global mencapai $3.9 triliun aset dan tumbuh 10%/tahun. Malaysia adalah pusat keuangan Islam global terbesar. Sharia Compliance Officer sangat tinggi permintaannya di bank-bank global."
+  },
+  {fac:"FPSD",name:"Pendidikan Seni Rupa",jenjang:"S1",diff:3,demand:2,flex:3,
+   difficulty_text:"Menggambar, melukis, seni grafis, apresiasi seni, sejarah seni, kritik seni, dan metodologi pengajaran seni rupa. Butuh kreativitas tinggi dan jam latihan yang banyak.",
+   jobs:["Guru Seni Rupa","Seniman","Illustrator Digital","Art Director","Gallery Curator","NFT Artist"],
+   geo:["Indonesia","Singapura (galeri seni)","Amerika Serikat"],
+   geo_note:"Seni rupa murni memiliki pasar global namun kompetitif. Digital art dan NFT membuka dimensi ekonomi baru. Karir sebagai illustrator dan art director di industri kreatif global sangat terbuka."
+  },
+  {fac:"FPSD",name:"Pendidikan Seni Tari",jenjang:"S1",diff:3,demand:2,flex:2,
+   difficulty_text:"Teknik tari (tradisional dan kontemporer), koreografi, sejarah tari, notasi tari, pedagogik tari. Sangat fisik dan membutuhkan dedikasi latihan harian.",
+   jobs:["Guru Seni Tari","Koreografer","Penari Profesional","Cultural Arts Educator","Movement Therapist"],
+   geo:["Indonesia","Singapura","Amerika Serikat (dance companies)"],
+   geo_note:"Peluang internasional terbatas namun ada di kelompok kesenian diaspora, pusat kebudayaan KBRI, dan festival tari internasional. Movement therapy adalah bidang berkembang di AS dan Australia."
+  },
+  {fac:"FPSD",name:"Pendidikan Seni Musik",jenjang:"S1",diff:3,demand:2,flex:3,
+   difficulty_text:"Teori musik, harmoni, solfeggio, instrumen utama, ansambel, aransemen, dan pedagogik musik. Latihan instrumen harian adalah tuntutan minimum.",
+   jobs:["Guru Musik","Music Educator","Musisi Profesional","Sound Engineer","Music Arranger","Recording Artist"],
+   geo:["Indonesia","Amerika Serikat","Inggris","Australia"],
+   geo_note:"Sekolah musik internasional dan orkestra membutuhkan educator terlatih. Industri streaming musik global mendorong permintaan untuk produksi digital dan music content creation."
+  },
+  {fac:"FPSD",name:"Desain Komunikasi Visual",jenjang:"S1",diff:4,demand:5,flex:5,
+   difficulty_text:"Tipografi, layout, ilustrasi, branding, UI/UX design, motion graphics, Adobe Creative Suite, Figma. Portofolio adalah segalanya. Deadline proyek sangat intensif sepanjang studi.",
+   jobs:["UI/UX Designer","Brand Designer","Motion Graphics Designer","Art Director","Creative Director","Visual Content Creator","Product Designer"],
+   geo:["Amerika Serikat","Inggris","Belanda","Australia","Singapura","Jerman","Uni Emirat Arab"],
+   geo_note:"UI/UX designer adalah salah satu profesi remote-work paling populer secara global. LinkedIn mencatat demand tumbuh 50-100% YoY. Industri teknologi, startup, dan agensi kreatif di seluruh dunia merekrut aktif."
+  },
+  {fac:"FPSD",name:"Film dan Televisi",jenjang:"S1",diff:3,demand:4,flex:4,
+   difficulty_text:"Sinematografi, penyutradaraan, penulisan skenario, editing video, produksi pasca, distribusi konten. Investasi waktu dan peralatan sangat tinggi selama kuliah.",
+   jobs:["Filmmaker / Sutradara","Video Producer","Content Creator","Cinematographer","Film Editor","Streaming Content Developer"],
+   geo:["Amerika Serikat (Hollywood)","Korea Selatan","Inggris","Singapura","Uni Emirat Arab"],
+   geo_note:"Netflix, Disney+, Apple TV+ menginvestasikan miliaran untuk konten original Asia. Korea Selatan adalah pusat produksi konten global baru pasca Squid Game. Platform streaming butuh konten lokal dalam jumlah besar."
+  },
+  {fac:"FPSD",name:"Musik",jenjang:"S1",diff:3,demand:3,flex:3,
+   difficulty_text:"Instrumen konsentrasi (komposisi atau performa), teori musik lanjutan, musik etnik, rekaman dan produksi audio. Lebih teknis daripada Pendidikan Seni Musik.",
+   jobs:["Musisi Profesional","Komposer","Music Producer","Sound Designer","Music Therapist","Scoring Artist"],
+   geo:["Amerika Serikat","Inggris","Jerman","Australia"],
+   geo_note:"Industri musik global mencapai $26 miliar. Streaming mendorong permintaan konten musik baru. Music therapy adalah bidang berkembang pesat di Australia dan AS dengan lisensi tersertifikasi."
+  },
+  {fac:"FK",name:"Kedokteran",jenjang:"S1",diff:5,demand:5,flex:5,
+   difficulty_text:"Anatomi, fisiologi, biokimia, patologi, farmakologi, klinik rotasi di berbagai departemen RS, dan ujian kompetensi UKMPPD. Program terpanjang dan paling berat: 5.5+ tahun, belum termasuk spesialisasi yang butuh 3-6 tahun tambahan.",
+   jobs:["Dokter Umum","Dokter Spesialis","Medical Researcher","Clinical Lecturer","Global Health Consultant","Medical Director"],
+   geo:["Australia","Inggris","Kanada","Jerman","Uni Emirat Arab","Arab Saudi","Selandia Baru","Amerika Serikat"],
+   geo_note:"WHO memproyeksikan kekurangan jutaan dokter global pada 2030. Australia, UK, Kanada, dan Jerman memberikan visa khusus health worker. UAE menawarkan gaji bebas pajak sangat kompetitif. Investasi terbesar, return terbesar."
+  }
+];
+
+const FACULTIES = ['Semua', ...[...new Set(DATA.map(d => d.fac))]];
+let activeFac = 'Semua';
+
+function facColor(fac) {
+  const m = {FIP:'#185FA5',FPIPS:'#3B6D11',FPBS:'#993C1D',FPMIPA:'#534AB7',FPTI:'#0F6E56',FPOK:'#A32D2D',FPEB:'#3c3489',FPSD:'#993556',FK:'#BA7517'};
+  return m[fac] || '#888';
+}
+
+function dots(n, cls) {
+  return Array.from({length:5},(_,i)=>`<div class="dot ${i<n?cls:''}"></div>`).join('');
+}
+
+function renderFacBar() {
+  document.getElementById('facBar').innerHTML = FACULTIES.map(f =>
+    `<button class="fac-btn ${f===activeFac?'active':''}" onclick="setFac('${f}')">${f}</button>`
+  ).join('');
+}
+
+function setFac(f) { activeFac = f; renderFacBar(); filterCards(); }
+
+function filterCards() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const sort = document.getElementById('sortBy').value;
+  let data = DATA.filter(d => {
+    const mF = activeFac === 'Semua' || d.fac === activeFac;
+    const mQ = d.name.toLowerCase().includes(q) || d.fac.toLowerCase().includes(q) || d.jobs.some(j => j.toLowerCase().includes(q));
+    return mF && mQ;
+  });
+  if (sort === 'demand') data.sort((a,b) => b.demand - a.demand);
+  else if (sort === 'difficulty') data.sort((a,b) => b.diff - a.diff);
+  else if (sort === 'flex') data.sort((a,b) => b.flex - a.flex);
+  else data.sort((a,b) => a.name.localeCompare(b.name,'id'));
+
+  document.getElementById('statsRow').innerHTML = `
+    <div class="stat-box"><div class="lbl">Ditampilkan</div><div class="val">${data.length}</div></div>
+    <div class="stat-box"><div class="lbl">Demand ≥4 (Tinggi)</div><div class="val">${data.filter(d=>d.demand>=4).length}</div></div>
+    <div class="stat-box"><div class="lbl">Fleksibilitas ≥4</div><div class="val">${data.filter(d=>d.flex>=4).length}</div></div>
+    <div class="stat-box"><div class="lbl">Kesulitan ≥4 (Berat)</div><div class="val">${data.filter(d=>d.diff>=4).length}</div></div>
+  `;
+
+  const c = document.getElementById('cardsContainer');
+  if (!data.length) { c.innerHTML = '<div class="no-result">🔍 Tidak ada program studi yang cocok dengan pencarian</div>'; return; }
+
+  c.innerHTML = data.map(d => {
+    const col = facColor(d.fac);
+    return `<div class="card">
+      <div class="card-head" onclick="toggleCard(this)">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;min-width:52px">
+          <span class="fac-badge" style="background:${col}22;color:${col};border:0.5px solid ${col}55">${d.fac}</span>
+          <span class="jenjang-tag">${d.jenjang}</span>
+        </div>
+        <div class="card-info">
+          <div class="card-name">${d.name}</div>
+          <div class="metrics">
+            <div class="metric"><span class="metric-label">Kesulitan</span><div class="dots">${dots(d.diff,'on-diff')}</div></div>
+            <div class="metric"><span class="metric-label">Global demand</span><div class="dots">${dots(d.demand,'on-demand')}</div></div>
+            <div class="metric"><span class="metric-label">Fleksibilitas</span><div class="dots">${dots(d.flex,'on-flex')}</div></div>
+          </div>
+        </div>
+        <span class="chevron">⌄</span>
+      </div>
+      <div class="card-body">
+        <div class="section-label">⚙️ Tantangan Akademis</div>
+        <div class="body-text">${d.difficulty_text}</div>
+        <div class="section-label">💼 Profesi / Jabatan High-Demand Global</div>
+        <div class="tag-row">${d.jobs.map(j=>`<span class="tag tag-job">${j}</span>`).join('')}</div>
+        <div class="section-label">🌍 Pasar Geografis Utama</div>
+        <div class="tag-row">${d.geo.map(g=>`<span class="tag tag-geo">${g}</span>`).join('')}</div>
+        <div class="tag-note">${d.geo_note}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function toggleCard(el) {
+  const body = el.nextElementSibling;
+  const ch = el.querySelector('.chevron');
+  body.classList.toggle('open');
+  ch.classList.toggle('open');
+}
+
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(id).classList.add('active');
+  if (id === 'compare') renderCompare();
+}
+
+function renderCompare() {
+  const facF = document.getElementById('cmpFac').value;
+  const srt = document.getElementById('cmpSort').value;
+  let data = facF === 'all' ? [...DATA] : DATA.filter(d => d.fac === facF);
+  if (srt === 'demand') data.sort((a,b) => b.demand - a.demand);
+  else if (srt === 'flex') data.sort((a,b) => b.flex - a.flex);
+  else if (srt === 'difficulty') data.sort((a,b) => b.diff - a.diff);
+  else data.sort((a,b) => a.name.localeCompare(b.name,'id'));
+
+  const dL = v => v>=5?'★★★★★ Sangat Tinggi':v>=4?'★★★★☆ Tinggi':v>=3?'★★★☆☆ Menengah':v>=2?'★★☆☆☆ Rendah':'★☆☆☆☆ Sangat Rendah';
+  const fL = v => v>=5?'Sangat Luas':v>=4?'Luas':v>=3?'Menengah':v>=2?'Terbatas':'Sangat Terbatas';
+  const diL = v => v>=5?'Sangat Berat':v>=4?'Berat':v>=3?'Sedang':v>=2?'Ringan':'Sangat Ringan';
+  const dCls = v => `demand-${v}`;
+  const col = facColor;
+
+  document.getElementById('compareTbody').innerHTML = data.map((d,i) => `
+    <tr>
+      <td style="color:var(--text-tertiary);font-size:12px">${i+1}</td>
+      <td style="font-weight:500">${d.name}</td>
+      <td><span style="font-size:11px;padding:2px 8px;border-radius:12px;background:${col(d.fac)}22;color:${col(d.fac)};white-space:nowrap">${d.fac} · ${d.jenjang}</span></td>
+      <td style="font-size:13px;white-space:nowrap">${diL(d.diff)}</td>
+      <td class="${dCls(d.demand)}" style="font-size:12px;white-space:nowrap">${dL(d.demand)}</td>
+      <td style="font-size:13px;color:var(--text-secondary);white-space:nowrap">${fL(d.flex)}</td>
+      <td style="font-size:12px;color:var(--text-secondary)">${d.geo.slice(0,3).join(', ')}</td>
+    </tr>
+  `).join('');
+}
+
+function initCompare() {
+  const sel = document.getElementById('cmpFac');
+  FACULTIES.forEach(f => {
+    const o = document.createElement('option');
+    o.value = f === 'Semua' ? 'all' : f;
+    o.textContent = f;
+    sel.appendChild(o);
+  });
+}
+
+renderFacBar();
+filterCards();
+initCompare();
+renderCompare();
+</script>
+</body>
+</html>
